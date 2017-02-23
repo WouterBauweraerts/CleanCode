@@ -1,6 +1,8 @@
 package cleancode.domain.repositories;
 
 import cleancode.domain.models.Customer;
+import cleancode.domain.models.Grocery;
+import cleancode.domain.models.ShoppingCart;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
@@ -30,6 +32,4 @@ public class CustomerRepository {
                 .filter(c -> c.getLoyaltyCard().getBarcode().equals(barcode))
                 .findFirst();
     }
-
-
 }
