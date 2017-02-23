@@ -1,8 +1,7 @@
-package cleancode.domain.services.;
+package cleancode.domain.services;
 
 import cleancode.domain.models.Grocery;
 import cleancode.domain.repositories.GroceriesRepository;
-import cleancode.domain.services.GroceriesService;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -28,7 +27,6 @@ public class GroceriesServiceTest {
     @Test
     public void addGroceries_ShouldAddGroceries(){
     groceriesService.addGrocery("Bread");
-
     verify(groceriesRepository).addGrocery(new Grocery("Bread"));
     }
 }

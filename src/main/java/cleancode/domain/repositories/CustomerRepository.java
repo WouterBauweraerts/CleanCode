@@ -30,4 +30,6 @@ public class CustomerRepository {
                 .filter(c -> c.getLoyaltyCard().getBarcode().equals(barcode))
                 .findFirst();
     }
+
+
 }
